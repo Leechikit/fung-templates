@@ -8,6 +8,19 @@ Create a repository on GitHub, and push some templates as branches to the reposi
 
 There is a one-to-one match between each templates and each branches.
 
+**template structure**:
+
+```
+├── template/
+│   ├── ...
+│   └── package.json
+└── fung-config.js
+```
+
+## Add a template folder
+
+add a template folder to save your template.
+
 ## Add a config file
 
 add a config file named `fung-config.json` in your template folder.

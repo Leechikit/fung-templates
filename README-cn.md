@@ -8,6 +8,19 @@
 
 每个模板和分支是一一对应的关系。
 
+**模板结构**:
+
+```
+├── template/
+│   ├── ...
+│   └── package.json
+└── fung-config.js
+```
+
+## 添加存放模板的文件夹
+
+add a template folder to save your template.
+
 ## 添加配置文件
 
 在你的模板跟目录中添加一个名为`fung-config.json`的配置文件。
