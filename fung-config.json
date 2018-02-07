@@ -1,0 +1,15 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "message": "Project name"
+    },
+    "version": {
+      "type": "string",
+      "message": "Version",
+      "default": "0.1.0"
+    }
+  },
+  "completeMessage": "To get started:\n\n  npm install\n  npm start"
+}
