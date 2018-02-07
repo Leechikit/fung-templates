@@ -1,0 +1,25 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "message": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "message": "Project description",
+      "default": "A Vue.js project"
+    },
+    "author": {
+      "type": "string",
+      "message": "Author"
+    },
+    "license": {
+      "type": "string",
+      "message": "License",
+      "default": "MIT"
+    }
+  },
+  "completeMessage": "To get started:\n\n  npm install\n  npm run dev"
+}

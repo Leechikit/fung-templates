@@ -1,73 +1,33 @@
-# Fung-templates
+# webpack-simple
 
-It's a template repository for Fung.
+> A simple Vue 2.0 Webpack & `vue-loader` setup for quick prototyping. Note this template is not suitable for production - for that you may want to use the [full webpack template](https://github.com/vuejs-templates/webpack).
 
-## Create a repository
+> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack-simple#1.0 my-project`
 
-Create a repository on GitHub, and push some templates as branches to the repository.
+### Usage
 
-There is a one-to-one match between each templates and each branches.
+This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
-## Add a config file
-
-add a config file named `fung-config.json` in your template folder.
-
-*fung-config.js*
-```
-{
-  "prompts": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "message": "Project name"
-    },
-    "description": {
-      "type": "string",
-      "required": true,
-      "message": "Project description",
-      "default": "A Vue.js project"
-    },
-    "author": {
-      "type": "string",
-      "message": "Author"
-    },
-    "license": {
-      "type": "string",
-      "message": "License",
-      "default": "MIT"
-    }
-  },
-  "completeMessage": "To get started:\n\n  npm install\n  npm run dev"
-}
+``` bash
+$ npm install -g vue-cli
+$ vue init webpack-simple my-project
+$ cd my-project
+$ npm install
+$ npm run dev
 ```
 
-* `prompts`: a question array containing [Question Object](#question-object).
-* `completeMessage`:show a message after completing the build command.
+### What's Included
 
-## Question Object
+- `npm run dev`: Webpack + `vue-loader` with proper config for source maps & hot-reload.
 
-A question object is a `hash` containing question related values:
+- `npm run build`: build with HTML/CSS/JS minification.
 
-- **type**: (String) Type of the prompt. Defaults: `input` - Possible values: `input`, `confirm`,
-`list`, `rawlist`, `expand`, `checkbox`, `password`, `editor`
-- **message**: (String|Function) The question to print. If defined as a function, the first parameter will be the current inquirer session answers.
-- **default**: (String|Number|Array|Function) Default value(s) to use if nothing is entered, or a function that returns the default value(s). If defined as a function, the first parameter will be the current inquirer session answers.
-- **choices**: (Array|Function) Choices array or a function returning a choices array. If defined as a function, the first parameter will be the current inquirer session answers.
-Array values can be simple `strings`, or `objects` containing a `name` (to display in list), a `value` (to save in the answers hash) and a `short` (to display after selection) properties. 
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader). Also check out the [breaking changes in vue-loader@9.0.0](https://github.com/vuejs/vue-loader/releases/tag/v9.0.0).
 
-## Placeholder
+### Fork It And Make Your Own
 
-Use `{{ placeholder }}` to add placeholders in the files.
+You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
 
-```
-{
-  "name": "{{ name }}",
-  "description": "{{ description }}",
-  "version": "{{ version }}",
-  "author": "{{ author }}",
-  "license": "{{ license }}",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {}
-}
+``` bash
+vue init username/repo my-project
 ```
