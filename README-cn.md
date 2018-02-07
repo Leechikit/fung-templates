@@ -41,7 +41,7 @@
 }
 ```
 
-* `prompts`: 一个包含[问题对象](#questions)的数组。
+* `prompts`: 一个包含[问题对象](#question-object)的数组。
 * `completeMessage`: 构建完成后输出的信息。
 
 ## 问题对象

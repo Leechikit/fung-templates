@@ -41,7 +41,7 @@ add a config file named `fung-config.json` in your template folder.
 }
 ```
 
-* `prompts`: a question array containing [Question Object](#question).
+* `prompts`: a question array containing [Question Object](#question-object).
 * `completeMessage`:show a message after completing the build command.
 
 ## Question Object
