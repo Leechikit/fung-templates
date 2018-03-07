@@ -2,6 +2,8 @@
 
 It's a template repository for Fung.
 
+[中文文档](https://github.com/Leechikit/fung-templates/blob/master/README-cn.md)
+
 ## Create a repository
 
 Create a repository on GitHub, and push some templates as branches to the repository.
