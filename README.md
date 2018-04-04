@@ -74,12 +74,14 @@ Array values can be simple `strings`, or `objects` containing a `name` (to displ
 
 Use `{{ placeholder }}` to add placeholders in the files.
 
+You can use expressions and operators in the placeholder.
+
 ```
 {
   "name": "{{ name }}",
   "description": "{{ description }}",
   "version": "{{ version }}",
-  "author": "{{ author }}",
+  "author": "{{ author ? author : 'leechikit'}}",
   "license": "{{ license }}",
   "scripts": {},
   "dependencies": {},

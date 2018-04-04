@@ -70,7 +70,7 @@ Array values can be simple `strings`, or `objects` containing a `name` (to displ
 
 ## 占位符
 
-Use `{{ placeholder }}` to add placeholders in the files.
+使用 `{{ placeholder }}` 增加占位符到文件中.
 
 ```
 {
