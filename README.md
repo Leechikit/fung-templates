@@ -72,19 +72,27 @@ Array values can be simple `strings`, or `objects` containing a `name` (to displ
 
 ## Placeholder
 
-Use `{{ placeholder }}` to add placeholders in the files.
+Fung use handlebars render templates.
 
-You can use expressions and operators in the placeholder.
+Use `{{ placeholder }}` to add placeholders in the files.
 
 ```
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
-  "version": "{{ version }}",
-  "author": "{{ author ? author : 'leechikit'}}",
-  "license": "{{ license }}",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {}
+    "name": "{{ name }}",
+    "description": "{{ description }}",
+    "version": "{{ version }}",
+    "author": "{{ author ? author : 'leechikit'}}",
+    "license": "{{ license }}",
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        {{#sass}}
+        "node-sass": "^4.5.3",
+        "sass-loader": "^6.0.6",
+        {{/sass}}
+        "webpack": "^3.6.0",
+        "webpack-dev-server": "^2.9.1"
+  }
 }
 ```

@@ -70,17 +70,27 @@ Array values can be simple `strings`, or `objects` containing a `name` (to displ
 
 ## 占位符
 
+Fung 使用 handlebars 渲染模板。
+
 使用 `{{ placeholder }}` 增加占位符到文件中.
 
 ```
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
-  "version": "{{ version }}",
-  "author": "{{ author }}",
-  "license": "{{ license }}",
-  "scripts": {},
-  "dependencies": {},
-  "devDependencies": {}
+    "name": "{{ name }}",
+    "description": "{{ description }}",
+    "version": "{{ version }}",
+    "author": "{{ author ? author : 'leechikit'}}",
+    "license": "{{ license }}",
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        {{#sass}}
+        "node-sass": "^4.5.3",
+        "sass-loader": "^6.0.6",
+        {{/sass}}
+        "webpack": "^3.6.0",
+        "webpack-dev-server": "^2.9.1"
+  }
 }
 ```
